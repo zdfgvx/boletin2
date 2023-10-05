@@ -1,22 +1,10 @@
 
 
-
-
-
 //for(let i= 0; i < materias.length; i++){
 
 //let materia = materias[i];
 
 //let primeiroTri = materia.querySelector('.primeiroTri');
-
-
-
-
-
-
-
-
-
 
 
 function pegarValor(){
@@ -54,15 +42,19 @@ function pegarValor(){
     console.log(media);
 
    //-----------muda a cor do valor dependendendo da nota--------//
+    
+    let cor = document.querySelector('.media');
 
-    media.style.color = 'blue';
+    if (mediaFinal >= 6){
+        cor.style.cssText = 'color: blue;';
+    }
+    else{
+        cor.style.cssText = 'color: red;';
+    }
 
+
+    
     }
 //}
-
-
-
-
-
 
 
